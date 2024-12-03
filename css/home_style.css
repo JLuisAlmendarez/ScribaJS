@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 2px solid #000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  font-family: "Brush Script MT", cursive;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+}
+
+.container {
+  padding: 20px;
+}
+
+.section {
+  margin: 20px 0;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.section h2 {
+  margin: 0 0 10px;
+}
+
+.section p {
+  margin: 0;
+}
