@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scriba Notebook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-buttons">
+                <button>add note</button>
+                <button>remove note</button>
+                <button>upload .txt</button>
+            </div>
+            <div class="note-list">
+                <div class="note-item">
+                    <input type="checkbox">
+                    <span>note 1</span>
+                </div>
+                <div class="note-item">
+                    <input type="checkbox">
+                    <span>note 2</span>
+                </div>
+            </div>
+            <div class="add-note">
+                <span>+</span>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <div class="logo">
+                    Scriba <span>✎</span> notebook
+                </div>
+                <a href="#" class="profile-link">profile ←</a>
+            </div>
+            <div class="toolbar">
+                <div class="format-buttons">
+                    <button>H1</button>
+                    <button>H2</button>
+                    <button>H3</button>
+                    <button>p</button>
+                    <button>Bold</button>
+                    <button>Italic</button>
+                    <button>LaTeX</button>
+                </div>
+                <button class="save-button">save</button>
+            </div>
+            <div class="editor">
+                <div class="note-title">note 1</div>
+                <div contenteditable="true">|</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

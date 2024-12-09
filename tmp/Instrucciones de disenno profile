@@ -1,0 +1,96 @@
+flujo completo y lógico de la zona de trabajo:
+
+Manejo de tags HTML:
+
+
+Click en H1 (botón presionado) → crea <h1>
+Usuario escribe contenido
+Segundo click en H1 (botón liberado) → cierra </h1>
+
+
+Procesamiento automático:
+
+
+Cada vez que se cierra un tag
+Se guarda el documento en memoria
+HTML lo procesa
+Se renderiza la vista actualizada
+Todo esto sucede en el background
+
+
+Botón Save:
+
+
+Ya no maneja la renderización
+Su única función es guardar en la base de datos
+Es una acción consciente del usuario para persistir su trabajo
+
+Esta estructura mantiene una separación clara de responsabilidades:
+
+Los botones de formato manejan la estructura HTML
+El cierre de tags maneja la renderización
+El botón save maneja la persistencia
+
+
+Funciones de las zonas para implementar:
+Barra lateral izquierda:
+
+Funciona como un gestor de notas y navegación
+Permite ver todas las notas existentes en una lista vertical
+Los botones superiores permiten la gestión de documentos:
+
+"add note" para crear nuevas notas
+"remove note" para eliminar notas existentes
+"upload .txt" sugiere que se pueden importar documentos de texto
+
+
+El botón "+" al final probablemente es un atajo para crear una nueva nota
+Los checkboxes junto a cada nota podrían servir para selección múltiple (quizás para eliminar varias notas a la vez)
+El nombre de las notas en la barra lateral corresponde al título que se muestra en el área de edición
+
+Barra de herramientas superior:
+
+Es una barra de formato de texto similar a un editor simple
+Los botones H1, H2, H3 son para crear encabezados de diferentes tamaños/jerarquías
+"p" probablemente representa el formato de párrafo normal
+"Bold" e "Italic" son para dar formato básico al texto
+"LaTeX" sugiere que se pueden insertar ecuaciones o fórmulas matemáticas
+El botón "save" guarda los cambios realizados
+
+
+//notas de separacion de herramientas
+HTML/CSS:
+
+Estructura base de la interfaz (layout de 2 columnas)
+Diseño de la barra lateral
+Lista de notas con checkboxes
+Botones de la barra superior con estados (pressed/unpressed)
+Área de edición de texto
+Estilos para los diferentes formatos (H1, H2, H3, p, Bold, Italic)
+Diseño responsive
+
+JavaScript necesitará manejar:
+
+Gestión de documentos:
+
+Crear/eliminar notas
+Importar archivos .txt
+Selección múltiple con checkboxes
+Sincronización del título de la nota
+
+
+Funcionalidad del editor:
+
+Estados de los botones de formato (toggle)
+Creación y cierre de tags HTML
+Procesamiento del texto en tiempo real
+Renderización al cerrar tags
+Mantener el documento en memoria
+
+
+Persistencia:
+
+Guardar en base de datos
+Cargar notas existentes
+Gestionar cambios automáticos
+Manejar el estado de edición
